@@ -1,6 +1,11 @@
 .chart{
   width: 100%;
 }
+
+.chart .chart-container .chart-items {
+  display: grid;
+  justify-content: center;
+}
 .chart .chart-container .chart-items .chart-item h3{
   text-align: center;
   margin-top: 27px;

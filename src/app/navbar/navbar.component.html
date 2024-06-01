@@ -2,12 +2,16 @@
   <div class="container-navbar">
     <div class="items">
       <div class="item item-top">
-        <img class="nav-icon" src="assets/images/navbar-icon/PMS.png" alt="">
+        <img class="nav-icon" src="assets/images/navbar-icon/PMS.png" alt=""  routerLink="/component">
       </div>
-      <div class="item item-cinter">
-        <ul >
-          <li *ngFor="let imgItem of imgItems ; let i = index">
-            <img class="nav-icon" src="{{imgItem.imageUrl}}" alt="name">
+      <div class="item item-center">
+        <ul>
+          <li *ngFor="let imgItem of imgItems; let i = index" [routerLink]="imgItem.name">
+            <img
+              class="nav-icon"
+              [src]="imgItem.imageUrl"
+              [alt]="imgItem.name"
+              >
           </li>
         </ul>
       </div>

@@ -1,0 +1,19 @@
+* {
+  font-family: Montserrat;
+  text-align: center;
+}
+
+h3 {
+  margin: 7rem 0 1.5rem;
+  color: #FF7F5C;
+}
+
+p {
+  color: #3D5161;
+  font-size: 1.5rem;
+}
+
+.high-light {
+  color: #FF7F5C;
+  font-weight: bold;
+}
