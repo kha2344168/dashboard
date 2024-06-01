@@ -1,0 +1,45 @@
+.header-start{
+  width: 20%;
+  display: grid;
+  height: 100%;
+  grid-auto-flow: column;
+  gap: 10px;
+  align-items: end;
+  align-content: center;
+  color: var(--font-color);
+}
+
+.header-start .items{
+  display: grid;
+  height: 100%;
+  grid-auto-flow: column;
+  align-items: end;
+  gap: 15px;
+}
+
+.header-start .items .icon {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: baseline;
+  gap: 10px;
+}
+.header-start .items .icon img {
+  width: 25px;
+}
+.header-start .items .icon  .point{
+  width: 8px;
+  height: 8px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  display: block;
+}
+.header-start .items .numper{
+  font-size: 24px;
+}
+.header-start .items .name{
+  font-size: 10px;
+}
+.header-start .items .name p{
+  margin: 0;
+  height: 14px;
+}

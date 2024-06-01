@@ -1,0 +1,41 @@
+<div class="list">
+  <div class="items" *ngFor="let myObject of myObjects; let i = index">
+    <div class="item">
+      <div class="items-title">
+        <div class="item-title icon">
+          <span class="item-title point"></span>
+          <img src="{{ myObject.img }}" alt="" />
+        </div>
+        <div class="item-title name">
+          <span> STATION NAME DUMMY</span>
+        </div>
+        <div class="item-title points" #btn (click)="toggleDetails(myObject)">
+          <span>
+            <i class="fa-solid fa-ellipsis"></i>
+          </span>
+        </div>
+        <!-- ///// -->
+        <div class="checkbox-container" #txt *ngIf="myObject.show">
+          <span class="check-title">View Properties:</span>
+          <hr />
+          <div class="checkbox-items">
+            <div class="checkbox-item" *ngFor="let checklistItem of checklistItems">
+              <input type="checkbox" [checked]="checklistItem.checked" [id]="checklistItem.name" />
+              <label [for]="checklistItem.name">{{ checklistItem.name }}</label>
+            </div>
+          </div>
+        </div>
+        <!-- ///// -->
+      </div>
+      <hr />
+      <div class="sales-v">
+        <div class="sv-item sales">
+          <span *ngFor="let date of myObject.array1">{{ date }}</span>
+        </div>
+        <div class="sv-item value">
+          <span *ngFor="let date of myObject.array2">{{ date }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

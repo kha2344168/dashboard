@@ -1,0 +1,32 @@
+<div class="status-box">
+  <div class="items">
+    <div class="item active" *ngFor="let myObject of myObjects" >
+      <div class="box-items" >
+        <div class="box-item number">
+          <span [countUp]="myObject.value"></span>
+          <span>{{myObject.mark}}<sup>{{myObject.sup}}</sup></span>
+        </div>
+        <div class="box-item title">
+          <span>{{myObject.des}}</span>
+        </div>
+        <div class="box-item rate"  [ngClass]="myObject.stat">
+          <span>{{myObject.percentage}} <sup>{{myObject.sup}}</sup></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div class="item">
+  <div class="box-items">
+    <div class="box-item number">
+      <span>71,028</span>
+      <span>EGP</span>
+    </div>
+    <div class="box-item title">
+      <span>Total Value</span>
+    </div>
+    <div class="box-item rate rete-up">
+      <span>50 m<sup>s</sup></span>
+    </div>
+  </div>
+</div> -->

@@ -1,0 +1,47 @@
+.date{
+
+}
+.date .thems{
+  display: grid;
+  grid-auto-flow: column;
+  gap: 20px;
+}
+
+.date .mat-mdc-form-field {
+  width: 10rem;
+  height: 69px;
+
+}
+
+.date .mat-mdc-form-field input{
+  padding-left: 0 ;
+  background: transparent ;
+}
+.mat-label{
+  padding-left: 0 !important;
+}
+.mat-mdc-form-field-has-icon-suffix .mat-mdc-text-field-wrapper {
+  padding-right: 0;
+}
+.addrss{
+  font-size: 11px;
+}
+.start-end{
+  font-size: 13px;
+  font-weight: 500;
+}
+.item-start, .item-end{
+  position: relative;
+}
+.item-start::before, .item-end::before{
+  content: "";
+  position: absolute;
+  left: -11%;
+  top: 32%;
+  width: 12px;
+  height: 12px;
+  background-color: var(--main-color);
+}
+.item-start::before{
+  clip-path: polygon(80% 50%, 0 0, 0 100%);
+}

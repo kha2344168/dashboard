@@ -1,0 +1,9 @@
+<div class="days">
+  <div class="items">
+    <div class="item" (click)="setActiveLink(link)" *ngFor="let link of links" [ngClass]="{ 'active': link === activeLink }">
+      <span>{{link}}</span>
+    </div>
+  </div>
+</div>
+
+

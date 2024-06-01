@@ -1,0 +1,56 @@
+.chart{
+  width: 100%;
+}
+.chart .chart-container .chart-items .chart-item h3{
+  text-align: center;
+  margin-top: 27px;
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--font-color);
+}
+
+.mychart{
+  font-size: 5px;
+}
+.chart-item .items-bar{
+  display: grid;
+  align-items: center;
+  grid-template-columns: 18% 52% 30%;
+  font-weight: 500;
+  color: var(--font-color);
+}
+.chart-item{
+  margin-top: 40px;
+}
+.chart-item .items-bar .name{
+  font-size: 13px;
+}
+.chart-item .items-bar .num{
+  font-size: 15px;
+}
+.chart-item  .bar{
+  margin-top: 10px;
+  width: 100%;
+  height: 5px;
+  background-color: var( --main-color-sec);
+  border-radius: 20px;
+}
+.chart-item  .bar span{
+  border-radius: 20px;
+  display: block;
+  width: 50%;
+  height: 5px;
+  background-color: var(--main-color);
+  color: #00cbc15e;
+}
+.chart-item.nm .number   {
+  color: #B9CDE2;
+  font-size: 20px;
+  text-align: right;
+}
+.chart-item.nm .number .num  {
+  font-size: 20px;
+}
+.chart-item.nm   .bar {
+  background-color: #B9CDE2;
+}

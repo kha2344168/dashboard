@@ -1,0 +1,63 @@
+.status-box .items {
+  display: grid;
+  grid-auto-flow: column;
+  width: 100%;
+  margin-top: 50px;
+}
+.status-box .items .item{
+  width: 165px;
+  height: 90px;
+  border-radius: 18px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: var(--font-color);
+  background-color: white;
+  padding-top: 17px;
+  padding-right: 10px;
+}
+.status-box .items .item:first-child{
+  background: var(--main-color-sec);
+}
+.status-box .items .item .box-items{
+  display: grid;
+  gap: 3px;
+}
+.status-box .items .item .box-item.number{
+  display: grid;
+  grid-auto-flow: column;
+  gap: 5px;
+  font-size: 15px;
+}
+
+.status-box .items .item .box-item.number span:first-child{
+  font-size: 25px;
+}
+.status-box .items .item .box-item.title{
+  font-size: 12px;
+  font-weight: 600;
+}
+.status-box .items .item .box-item.rate{
+  color: var(--main-color);
+  position: relative;
+  margin-left: 18px;
+  font-size: 11px;
+}
+.status-box .items .item .box-item.rete-up{
+  color: var(--rete-up);
+}
+.status-box .items .item .box-item.rate::before{
+  content: "";
+  position: absolute;
+  left: -16%;
+  top: 9px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--main-color);
+  clip-path: polygon(52% 61%, 0 0, 100% 0);
+}
+.status-box .items .item .box-item.rete-up::before{
+  background-color: var(--rete-up);
+  clip-path: polygon(50% 0, 0 74%, 100% 73%);
+}
+
