@@ -181,4 +181,5 @@
 .sv-item span:nth-child(3),
 .sv-item span:nth-child(5) {
   font-weight: 600;
+  width: 98%;
 }

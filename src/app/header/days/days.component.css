@@ -7,7 +7,7 @@
   display: grid;
   grid-auto-flow: column;
   border-radius: 50px;
-  height: 25px;
+  height: 30px;
   justify-items: center;
 }
 .days .items .item{
@@ -30,5 +30,5 @@
 }
 .days .items .item.active  span {
   color: white;
-  
+
 }
