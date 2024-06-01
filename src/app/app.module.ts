@@ -30,7 +30,7 @@ import { ElementsComponent } from './elements/elements.component';
 import { SettingsComponent } from './settings/settings.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 
-
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -54,6 +54,7 @@ import { NotificationsComponent } from './notifications/notifications.component'
     ElementsComponent,
     SettingsComponent,
     NotificationsComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -68,8 +69,8 @@ import { NotificationsComponent } from './notifications/notifications.component'
     MatNativeDateModule,
     NgChartsModule,
     AppRoutingModule,
-    CountUpModule
-
+    CountUpModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

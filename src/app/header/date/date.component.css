@@ -1,6 +1,10 @@
 .date{
-
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-content: center;
+  align-items: center;
 }
+
 .date .thems{
   display: grid;
   grid-auto-flow: column;
@@ -44,4 +48,8 @@
 }
 .item-start::before{
   clip-path: polygon(80% 50%, 0 0, 0 100%);
+}
+.date[_ngcontent-ng-c442374030] .mat-mdc-form-field[_ngcontent-ng-c442374030] input[_ngcontent-ng-c442374030] {
+
+  font-size: 17px;
 }

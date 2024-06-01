@@ -8,6 +8,7 @@ import { ControlRoomComponent } from './control-room/control-room.component';
 import { ElementsComponent } from './elements/elements.component';
 import { SettingsComponent } from './settings/settings.component';
 import { NotificationsComponent } from './notifications/notifications.component';
+
 const routes: Routes = [
   { path: '', redirectTo: 'component', pathMatch: 'full' },
   { path: 'control-room', component:ControlRoomComponent  },

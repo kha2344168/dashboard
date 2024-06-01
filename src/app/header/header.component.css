@@ -16,7 +16,9 @@ header .container-header .items{
   /* grid-auto-flow: column; */
   align-content: center;
   align-items: center;
-  grid-template-columns: 31% 32% 35%;
+  /* grid-template-columns: 31% 32% 35%; */
+   grid-template-columns: 31%  67%;
+
 }
 .mat-form-field{
   height: 50px;

@@ -1,19 +1,24 @@
 <div class="date">
+  <app-days (dateChanged)="onDateChanged($event)"></app-days>
   <div class="thems">
     <div class="item item-start">
       <mat-form-field color="warn">
-        <mat-label class="mat-label"  > <span class="addrss"><span class="start-end">Start</span> date - time</span></mat-label>
-        <input  matInput [matDatepicker]="picker">
+        <mat-label class="mat-label">
+          <span class="addrss"><span class="start-end">Start</span> date - time</span>
+        </mat-label>
+        <input matInput [matDatepicker]="picker" [(ngModel)]="startDate">
         <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
         <mat-datepicker #picker></mat-datepicker>
       </mat-form-field>
     </div>
     <div class="item item-end">
       <mat-form-field color="warn">
-        <mat-label class="mat-label"  > <span class="addrss"><span class="start-end">End</span> date - time</span></mat-label>
-        <input matInput [matDatepicker]="picker2">
+        <mat-label class="mat-label">
+          <span class="addrss"><span class="start-end">End</span> date - time</span>
+        </mat-label>
+        <input matInput [matDatepicker]="picker2" [(ngModel)]="endDate">
         <mat-datepicker-toggle matIconSuffix [for]="picker2"></mat-datepicker-toggle>
-        <mat-datepicker #picker2 ></mat-datepicker>
+        <mat-datepicker #picker2></mat-datepicker>
       </mat-form-field>
     </div>
   </div>
